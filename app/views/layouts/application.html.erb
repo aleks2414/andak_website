@@ -6,7 +6,7 @@
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-	<script src="https://use.fontawesome.com/7dee056668.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,8 +18,100 @@
 <% end %>
 
 
+<div id="navin">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <%= link_to root_path do %>
+              <%= image_tag "andak_logo.png" %>
+              <% end %>
+            </div>
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="<%= 'activo' if current_page?(quimicos_basicos_path) %>"><a href="<%=quimicos_basicos_path %>">Químicos Básicos</a></li>
+                <li class="<%= 'activo' if current_page?(especialidades_path) %>"><a href="<%=especialidades_path %>">Especialidades</a></li>
+                <li class="<%= 'activo' if current_page?(cuidado_personal_path) %>"><a href="<%=cuidado_personal_path %>">Cuidado Personal</a></li>
+
+								<li><a href="<%=root_path %>">Contacto</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div>
+
+
 <div id="content">
 	<%= yield %>
 </div>
+
+<div id="contpaqi">
+	<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+    	<div id="formario">
+         <h1 class="big_title">Contacto</h1> <br>
+
+<%= form_for @contact do |f| %>
+					<div class="field">
+						<%= f.label :nombre %><br>
+						<%= f.text_field :name, required:true %>
+					</div>
+
+					<div class="row">
+					<div class="col-md-12">
+					<div class="field">
+						<%= f.label :email %><br>
+						<%= f.email_field :email, required:true %>
+					</div>
+					</div>
+					</div>
+
+
+					<%= f.text_field :donde, :value => "#{params[:controller]} - #{request.original_url}", class: "hidden" %>
+
+					<div class="field">
+						<%= f.label :comentarios %><br>
+						<%= f.text_area :comments %>
+					</div>
+
+					<div class="hidden">
+						<%= f.label :nickname %><br>
+						<%= f.text_field :nickname, hint: 'Esto se queda en blanco' %>
+					</div>
+
+					<br>
+					<div class="but">
+						<%= f.submit "Enviar", class:"button button_primary button_center"%>
+					</div>
+					<br>
+					<% end %>						
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="footer">
+	<div class="container">
+	<%= image_tag "andak_logo2.png" %>
+	</div>
+</div>
+
+  <div id="cuadrito">
+   <h2>Contacto: contacto@andak.com.mx - Copyright © 2018. All Rights Reserved.</h2>
+ </div>
 </body>
 </html>

@@ -22,16 +22,26 @@
 @import "bootstrap";
 @import "reset";
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
 
-$primary: #657FBE;
-$secondary: #223A6D;
-$light_grey: #F5F5F5;
+
+$primary: #00B5A4;
+$secondary: #06466E;
+$light_grey: #F9F9F9;
 
 
 
 body {
 -webkit-font-smoothing: antialiased;
 text-rendering: optimizeLegibility;
+font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  margin-top: 15px;
 }
 
 
@@ -87,19 +97,19 @@ text-rendering: optimizeLegibility;
 /*navbar*/
 
 #navin {
-	.navbar {
-	background-color: white !important;
-	border-color: white !important;
-	padding: 15px 5%;
+  .navbar {
+  background-color: white !important;
+  border-color: white !important;
+  padding: 15px 5%;
 }
 }
 
 .navbar-nav > li > a {
-    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     border-bottom: solid 1.5px white;
     background-color: none;
-    color: $primary !important;
+    color: $secondary !important;
 }
 
 .activo {
@@ -136,7 +146,7 @@ text-rendering: optimizeLegibility;
 
 .hero {
     background:
-    linear-gradient(to right, rgba(75, 123, 211, 0.5), rgba(22, 215, 177, 0.3)),    url(asset-path("cover2.png"));
+    linear-gradient(to right, rgba(75, 123, 211, 0.5), rgba(22, 215, 177, 0.3)),    url(asset-path("cover_home.png"));
     width: 100%;
     height: 70vh;
     background-size: cover !important;
@@ -149,6 +159,22 @@ text-rendering: optimizeLegibility;
   }
 }
 
+.shamp_blue{
+  background-color: $secondary;
+  width: 100%;
+  height: 400px;
+}
+
+#shamp_text {
+  padding: 50px 80px;
+}
+
+#shamp_grey {
+  text-align: center;
+  padding: 50px 80px;
+  background-color: $light_grey;
+  height: 400px;
+}
 
 /*forms*/
 
@@ -168,10 +194,12 @@ h2 {
 
 input[type="date"],input[type="name"], input[type="email"], input[type="textbox"], input[type="number"], input[type="tel"], input[type="text"], input[type="password"], textarea {
   width: 100%;
-  height: 3.5rem;
+  padding-left: 10px;
+  font-size: 0.8em;
+  height: 1.7rem;
   border:none;
   border:1.3px solid #dadada;
-  margin-bottom: 1.5rem;
+  margin-bottom: .3rem;
   background-color: white !important;
   }
 
@@ -184,26 +212,80 @@ select {
   }
 
   textarea {
-    height: 20rem !important;
+    height: 3.4rem !important;
   }
   label {
   margin-top: 1rem;
-  font-weight: 900;
+  font-weight: 300;
   text-align: center;
   text-transform: uppercase;
-  font-size: 12px;
-  color: #555;
+  font-size: 11px;
 }
 }
 
 
+#footer {
+  padding: 50px 0;
+  background-color: $secondary;
+}
 
+#cuadrito {
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+}
 
+#trio {
+  padding: 50px 0;
+  text-align: center;
+}
 
+#cuadrin {
+  margin-bottom: 20px;
+  padding: 15px;
+  height: 185px;
 
+  img {
+    width: 70px;
+  }
+}
 
+#products {
+  background-color: $light_grey;
+  padding: 10px 0;
+}
 
+.butra {
+  margin-top: 20px !important;
+  color: $primary;
+  text-transform: uppercase;
+  padding: 10px 0;
+  border-bottom: solid 2px $primary;
+  font-size: .9em;
 
+  &:hover {
+    color: $secondary;
+    border-color: $secondary;
+  }
+}
+
+#product_show {
+  margin: 50px 0;
+  li {
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: .9em;
+    svg {
+      margin: 0 15px;
+      font-size: .7em;
+      color: $primary;
+    }
+  }
+}
+
+#contpaqi {
+  padding: 50px 0;
+}
 
 /*Media*/
 

@@ -1,2 +1,127 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div class="hero">
+	<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<div id="banner_1">
+				<h1 class="titulo white">Especialistas en distribución de productos químicos industriales</h1> <br>
+				<p class="white hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dignissimos perspiciatis incidunt officia vero.</p>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+<div id="shamp">
+	
+		<div class="row">
+			<div class="col-md-1 hidden-xs hidden-sm">
+				<div class="shamp_blue">
+					<h1>home</h1>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div id="shamp_text">
+					<h1>¿Quiénes somos?</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, vel ipsa obcaecati facere. Quas facilis, vero rerum id perspiciatis sapiente dolorum, ad nulla quae quisquam, possimus sunt aperiam suscipit, sit!</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, vel ipsa obcaecati facere. Quas facilis, vero rerum id perspiciatis sapiente dolorum, ad nulla quae quisquam, possimus sunt aperiam suscipit, sit!</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div id="shamp_grey">
+					<div id="shamp_show">
+						<h1>Misión</h1>
+						<p>Ser una empresa reconocida, distinguida, renombrada y demandante en el sector de comercializacion de materias primas, quimicos y en general, para asi poder convertirnos en una empresa solida y confiable la cual sea considerada por nuestros clientes como una herramienta de apoyo para lograr objetivos en conjunto.</p> <br><br><br>
+					</div>
+					<div id="shamp_show">
+						<h1>Visión</h1>
+						<p>Ofrecer servicio, calidad y precio justo al cliente. <br> <br>
+
+Estamos integrados por fuerzas jovenes e innovadoras que combinado con la madurez y experiencia nos damos la tarea de garantizar los proyectos en los que participamos con nuestros clientes</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+</div>
+
+<div id="trio">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 col-md-offset-3">
+				<div id="cuadrin">
+					<%= image_tag "crece.svg" %> <br><br>
+					<h2>PASIÓN POR LOS RESULTADOS</h2>
+				</div>
+			</div>
+
+			<div class="col-md-2">
+				<div id="cuadrin" class="resaltado">
+					<%= image_tag "team.svg" %> <br><br>
+					<h2>TRABAJO EN EQUIPO</h2>
+				</div>
+			</div>
+
+			<div class="col-md-2">
+				<div id="cuadrin">
+					<%= image_tag "integ.svg" %> <br><br>
+					<h2>INTEGRIDAD CON RESULTADOS</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="products">
+	<div class="container">
+		<div class="col-md-4">
+			<div id="product_show">
+				<h2>Químicos Básicos</h2> <br>
+				<ul>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+				</ul>
+				<br><br>
+				<%= link_to "Todos los químicos básicos", quimicos_basicos_path, class: "butra" %>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div id="product_show">
+				<h2>Especialidades</h2> <br>
+				<ul>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+				</ul>
+				<br><br>
+				<%= link_to "Todas las especialidades", especialidades_path, class: "butra" %>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div id="product_show">
+				<h2>Cuidado Personal</h2> <br>
+				<ul>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+				</ul>
+				<br><br>
+				<%= link_to "Todo el cuidado personal", cuidado_personal_path, class: "butra" %>
+			</div>
+		</div>
+	</div>
+</div>
