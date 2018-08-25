@@ -80,12 +80,13 @@ Estamos integrados por fuerzas jovenes e innovadoras que combinado con la madure
 			<div id="product_show">
 				<h2>Químicos Básicos</h2> <br>
 				<ul>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+<li> <span class="far fa-circle"></span> Acido fosfórico alimenticio </li>
+<li> <span class="far fa-circle"></span> Acido fosfórico ámbar </li>
+
+<li> <span class="far fa-circle"></span> Ácido Bórico </li>
+<li> <span class="far fa-circle"></span> Ácido Cítrico </li>
+<li> <span class="far fa-circle"></span> Ácido Esteárico </li>
+<li> <span class="far fa-circle"></span> Ácido Fluorhídrico </li>
 				</ul>
 				<br><br>
 				<%= link_to "Todos los químicos básicos", quimicos_basicos_path, class: "butra" %>
@@ -96,12 +97,12 @@ Estamos integrados por fuerzas jovenes e innovadoras que combinado con la madure
 			<div id="product_show">
 				<h2>Especialidades</h2> <br>
 				<ul>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+<li> <span class="far fa-circle"></span>Acido acético</li>
+<li> <span class="far fa-circle"></span>Acido cítrico</li>
+<li> <span class="far fa-circle"></span>Sosa caustica flakes</li>
+<li> <span class="far fa-circle"></span>Acido sórbico</li>
+<li> <span class="far fa-circle"></span>Sacarina</li>
+<li> <span class="far fa-circle"></span>Bicarbonato de sodio</li>
 				</ul>
 				<br><br>
 				<%= link_to "Todas las especialidades", especialidades_path, class: "butra" %>
@@ -112,12 +113,12 @@ Estamos integrados por fuerzas jovenes e innovadoras que combinado con la madure
 			<div id="product_show">
 				<h2>Cuidado Personal</h2> <br>
 				<ul>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
-					<li><span class="far fa-circle"></span>Lorem ipsum dolor</li>
+<li> <span class="far fa-circle"></span>Ácido Cítrico</li>
+<li> <span class="far fa-circle"></span>Benzoato de Sodio</li>
+<li> <span class="far fa-circle"></span>Estevia</li>
+<li> <span class="far fa-circle"></span>Sacarina</li>
+<li> <span class="far fa-circle"></span>Goma Guar</li>
+<li> <span class="far fa-circle"></span>Peróxido de Hidrógeno</li>
 				</ul>
 				<br><br>
 				<%= link_to "Todo el cuidado personal", cuidado_personal_path, class: "butra" %>
@@ -125,3 +126,23 @@ Estamos integrados por fuerzas jovenes e innovadoras que combinado con la madure
 		</div>
 	</div>
 </div>
+
+<div class="container">
+<div class="owl-carousel">
+          <div> <%= image_tag "us08.png" %> </div>
+          <div> <%= image_tag "us09.png" %> </div>
+          <div> <%= image_tag "us10.png" %> </div>
+          <div> <%= image_tag "us11.png" %> </div>
+</div>
+</div>
+
+
+
+<script>
+	$(".owl-carousel").owlCarousel(
+		{
+		items:4,
+    margin:10,
+    autoWidth:true
+		});
+</script>

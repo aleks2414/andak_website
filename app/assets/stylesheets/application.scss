@@ -11,8 +11,8 @@
  * It is generally better to create a new file per style scope.
  *
  * require fullcalendar
- * require owl.carousel
- * require owl.theme
+ *= require owl.carousel
+ *= require owl.theme
  *= require_tree .
  *= require_self
  */
@@ -253,6 +253,10 @@ select {
 #products {
   background-color: $light_grey;
   padding: 10px 0;
+
+  h1 {
+    font-size: 2em;
+  }
 }
 
 .butra {
@@ -285,6 +289,11 @@ select {
 
 #contpaqi {
   padding: 50px 0;
+}
+
+#create {
+  background-color: $secondary;
+  padding: 200px 0;
 }
 
 /*Media*/
