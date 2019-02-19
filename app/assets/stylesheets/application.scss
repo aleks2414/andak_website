@@ -141,22 +141,49 @@ p {
 
 /*end styles*/
 
-
+.white2 {
+  background-color: white !important;
+}
 /*hero*/
 
 .hero {
     background:
-    linear-gradient(to right, rgba(75, 123, 211, 0.5), rgba(22, 215, 177, 0.3)),    url(asset-path("cover_home.png"));
+    linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(34, 34, 34, 0.3)),    url(asset-path("cover2.png"));
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
-		padding: 50px 40px;
+    padding: 50px 40px;
   h1 {
-  	margin-top: 15%;
-  	font-size: 35px;
+    margin-top: 55%;
+    font-size: 35px;
   }
+  h2 {
+    text-transform: uppercase;
+  }
+}
+
+.jumbo{
+  font-size: 30px;
+}
+
+
+video#bgvideo {
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-ms-transform: translateX(-50%) translateY(-50%);
+-moz-transform: translateX(-50%) translateY(-50%);
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background: url(placeholder.jpg) no-repeat;
+background-size: cover;
 }
 
 .shamp_blue{
