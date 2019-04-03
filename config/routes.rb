@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'welcome#index'
+	root to: 'welcome#index'
 
   resources :contacts, only: [:new, :create]
   get 'quimicos_basicos' => 'pages#quimicos_basicos'
